@@ -1,0 +1,19 @@
+{
+  "dependencies": { "@nestjs/common": "^10.4.15", "@nestjs/core": "^10.4.15", "@nestjs/platform-express": "^10.4.15", "figlet": "^1.8.0", "reflect-metadata": "^0.2.2", "rxjs": "^7.8.1" },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/figlet": "^1.7.0",
+    "@types/node": "^22.10.1",
+    "ts-node": "^10.9.2"
+  },
+  "name": "proxy",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --env-file=.env.development --watch src/index.ts",
+    "start": "bun run --env-file=.env src/index.ts"
+  },
+  "peerDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
